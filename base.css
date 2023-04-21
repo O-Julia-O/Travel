@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Volkhov:wght@700&display=swap');
+
 * {
+    font-family: 'Poppins';
 	padding: 0px;
 	margin: 0px;
 	border: none;
@@ -6,21 +9,161 @@
 
 header, main, footer {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
 }
 
 header {
+    height: 1080px;
+    width: 100%;
+    background-image: url(/images/Decore1.png);
+
+    background-position: 0px 0%;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_menu {
+    /* position: sticky;
+    left: 0;
+    top: 0; */
+    align-items: center;
     display: flex;
-    align-items: left;
     justify-content: space-between;
-    padding-top: 3rem;
-    height: 810px;
     width: 70%;
+    height: 80px;
+    /* background-color: rgba(240, 248, 255, 0.323); */
+
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.main_menu div:last-child {
+    padding-right: 30px;
+}
+
+.main_text {
+
+    width: 50%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+}
+
+.main_text h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #DF6951;
+}
+
+.main_text h1 {
+    font-family: 'Volkhov';
+    font-size: 4rem;
+    color: #181E4B;
+}
+
+.main_text p {
+    font-family: 'Poppins';
+    color: #5E6282;
+    font-weight:500;
+    font-size: 0.8em;
+    width: 70%;
+    /* word-spacing: 0.7rem; */
+}
+
+.find_out_more_button {
+
+    background-color: #F1A501;
+    width: 170px;
+    height: 60px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.play_demo_button {
+    width: 170px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #686D77;
+    background-image: url(/images/Play_button.svg);
+    background-position: 10px 4px;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding: 1rem;
+}
+
+.play_demo_button:hover {
+
+}
+
+.button {
+    color: black;
+    padding: 10px 20px;
+    background: none;
+    
+}
+
+.button:hover {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.first-section {
+    max-width: 1080px;
+    height: 780px;
 }
 
 .logo {
     width: 115px;
     margin-right: 10rem;
+}
+
+.photo_traveller {
+    position: absolute;
+    background-size: 60%;
+    left: 40%;
+    top: 10%;
+    width: 43%;
+    z-index: 2;
+}
+
+.pic_planner1, .pic_planner2 {
+    position: absolute;
+}
+
+.pic_planner1 {
+    left: 45%;
+    top: 15%;
+}
+
+.pic_planner2 {
+    left: 74%;
+    top: 17%;
+    z-index: 1;
+}
+
+/* .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+} */
+
+main {
+    
+}
+
+main>.container:first-child  {
+    width: 70%;
+    margin: 0 auto;
 }
 
 nav {
@@ -44,4 +187,10 @@ ul li {
 a {
     color: black;
     text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    padding-bottom: 10px;
 }
