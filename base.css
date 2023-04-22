@@ -13,12 +13,12 @@ header, main, footer {
 }
 
 header {
-    height: 1080px;
+    height: 810px;
     width: 100%;
     background-image: url(/images/Decore1.png);
 
     background-position: 0px 0%;
-    background-size: 100% 60%;
+    background-size: 100% 80%;
     background-repeat: no-repeat;
 }
 
@@ -26,6 +26,12 @@ header {
     width: 100%;
     margin: 0 auto;
 }
+
+.container>h1, .container>h3 {
+    text-align: center;
+}
+
+
 
 .main_menu {
     /* position: sticky;
@@ -200,4 +206,98 @@ a:hover {
     cursor: pointer;
     text-decoration: underline;
     padding-bottom: 10px;
+}
+
+/* ANCHOR Best Services */
+
+.container h1 {
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.list_services {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-evenly;
+
+    
+    
+}
+
+.list_services>div {
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+
+    justify-content: center;
+}
+
+.list_item {
+    padding-top: 4rem;
+    background-color: white;
+    max-width: 200px;
+
+    border-radius: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    
+
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.list_item:hover {
+    border: 1px solid rgba(128, 128, 128, 0.584);
+    box-shadow: 0px 2px 3px grey;
+}
+
+.list_item:nth-child(2) {
+    padding-top: 2rem;
+}
+
+
+.list_item:not(:nth-child(2)) img {
+    padding-bottom: 3.5rem;
+}
+
+.list_services img {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+}
+
+/* .list_services .setting_icon {
+}
+
+.list_services .micro_icon {
+}
+
+.list_services .weather_icon {
+    left: 105px;
+    top: 110px;
+} */
+
+.list_services .plane_icon {
+    /* width: 3rem; */
+}
+
+.services {
+    height: 530px;
+}
+
+.services h1{
+    margin-bottom: 2rem;
+}
+
+
+.list_services div h3 {
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #1E1D4C;
 }
