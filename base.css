@@ -10,11 +10,11 @@
 header, main, footer {
     margin: 0 auto;
     width: 100%;
+    background-color: rgb(239, 239, 239);
 }
 
 header {
     height: 810px;
-    width: 100%;
     background-image: url(/images/Decore1.png);
 
     background-position: 0px 0%;
@@ -25,8 +25,10 @@ header {
 /* ANCHOR Container */
 
 .container {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
+
+    padding-bottom: 4rem;
 }
 
 .container>h1, .container>h3 {
@@ -37,6 +39,8 @@ header {
     font-family: 'Volkhov';
     font-weight: 700;
     font-size: 50px;
+
+    margin-bottom: 2rem;
 }
 
 .container>h3 {
@@ -48,6 +52,26 @@ header {
     color: #5E6282;
     text-transform: uppercase;
 }
+
+/* FIXME New LIST */
+
+.block_list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item_list {
+    border-radius: 30px;
+
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.item_list:hover {
+    border: 1px solid rgba(128, 128, 128, 0.584);
+    box-shadow: 0px 2px 3px grey;
+}
+
+/* =================================================== */
 
 .main_menu {
     align-items: center;
@@ -65,7 +89,6 @@ header {
 }
 
 .main_text {
-
     width: 50%;
     height: 630px;
     display: flex;
@@ -216,11 +239,11 @@ a:hover {
     background-position: right top;
     background-repeat: no-repeat;
 }
-
+/* FIXME List */
 .list_services {
     font-family: 'Poppins';
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
 }
 
 .list_services>div {
@@ -229,28 +252,29 @@ a:hover {
 
 .icon {
     display: flex;
-
     justify-content: center;
 }
+
+
 
 .list_item {
     padding-top: 4rem;
     background-color: white;
     max-width: 200px;
 
-    border-radius: 30px;
+    /* border-radius: 30px; */
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1.5rem;
     margin-top: 3rem;
 
-    transition: box-shadow 0.3s, border 0.3s;
+    /* transition: box-shadow 0.3s, border 0.3s; */
 }
 
-.list_item:hover {
-    border: 1px solid rgba(128, 128, 128, 0.584);
-    box-shadow: 0px 2px 3px grey;
-}
+/* .list_item:hover {
+     border: 1px solid rgba(128, 128, 128, 0.584);
+    box-shadow: 0px 2px 3px grey; 
+} */
 
 .list_item:nth-child(2) {
     padding-top: 2rem;
@@ -266,7 +290,7 @@ a:hover {
 }
 
 .services h1{
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .list_services div h3 {
@@ -281,3 +305,89 @@ color: #1E1D4C;
     text-align: justify;
     font-size: 18px;
 }
+
+/* Top destinations */
+
+.destinations {
+    height: 620px;
+}
+
+.destinations h1{
+    /* margin-bottom: 1rem; */
+}
+
+.item_travel{
+    position: relative;
+    max-width: 314px;
+    contain: content;
+    
+    /* margin-left: 2rem; */
+    /* background-size: 30%;
+    background-repeat: no-repeat;
+    background-size: contain; */
+} 
+
+.item_travel>div {
+    /* width: 100%; */
+    
+}
+
+.item_travel img {
+    width: 100%;
+    background-size: cover;
+    position: center top;
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0 74%);
+}
+
+.travel_text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0%;
+    /* left: 50%; */
+    width: 100%;
+    height: 28%;
+    background-color: #ffffff;
+
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.travel_text .place, .travel_text span {
+    font-size: 18px;
+    color: #5E6282;
+    flex: 50%;
+}
+
+.travel_text span {
+    text-align: end;
+}
+
+.travel_text p {
+    color: #5E6282;
+    background-image: url(/images/Vector1.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    flex: 100%;
+    padding-left: 1.6rem;
+}
+
+/* .item_travel:nth-child(1) {
+    background-image: url(/images/Rome.png);
+    
+}
+
+.item_travel:nth-child(2) {
+    background-image: url(/images/London.jpg);
+    
+}
+
+.item_travel:nth-child(3) {
+    background-image: url(/images/Full_Europe.png);
+} */
+
+/* .item_travel img {
+    background-size: cover;
+} */
