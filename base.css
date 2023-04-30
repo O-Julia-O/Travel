@@ -412,6 +412,11 @@ color: #1E1D4C;
     font-size: 16px;
 }
 
+.booktrip h1, .booktrip h3 {
+    width: 50%;
+    text-align: left;
+}
+
 .section_book p {
     font-weight: 100;
     width: 70%;
@@ -434,4 +439,10 @@ color: #1E1D4C;
     position: absolute;
     left: 43%;
     top: 40%;
+}
+
+.book_social .social_photo {
+    position: absolute;
+    top: -35%;
+    left: 0%;
 }
